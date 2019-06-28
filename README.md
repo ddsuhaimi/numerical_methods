@@ -4,4 +4,5 @@ This repository contains codes I made for my numerical method class.
 - bisection method
 - regula falsi
 - secant method
+- newton raphson
 
