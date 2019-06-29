@@ -10,7 +10,7 @@ def regula_falsi(a, b, e):
 
     mid = (a*f(b) - b*f(a))/(f(b) - f(a))
 
-    # convergence check, return the midpoint
+    # convergence check using function value error
     if abs(a-b) < e:
         return mid
 

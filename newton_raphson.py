@@ -15,18 +15,20 @@ def fprime(a):
 
 
 def newton_raphson(a, e, N):
-    for i in range(N):
-        # convergence check
-        if abs(f(a)) < e:
-            return a
+    x = [None for i in range(N)]
+    x[0] = a
 
+    for i in range(N-1):
         # update new value to check
-        a = a - f(a) / float(fprime(a))
+        x[i + 1] = x[i] - f(x[i]) / float(fprime(x[i]))
+
+        # convergence check
+        if abs(x[i + 1]-x[i]) < e:
+            return x[i + 1]
 
     # if we still cant satisfy convergence check,
     # the it must not converge
-    if abs(f(a)) > e:
-        return None
+    return "not converge"
 
 
 print(newton_raphson(5, 1e-15, 1000))

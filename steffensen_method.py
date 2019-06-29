@@ -8,13 +8,13 @@ def fprime(x, h):
 
 def steffensen(x, e, N):
     for i in range(N):
-        # convergence check
-        if abs(f(x)) < e:
-            return x
-
         # update new value to check
         h = f(x)
         x = x - f(x) / fprime(x, h)
+
+        # convergence check using function value error
+        if abs(f(x)) < e:
+            return x
 
     # if we still cant satisfy convergence check,
     # the it must not converge

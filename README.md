@@ -11,3 +11,6 @@ This repository contains codes I made for my numerical method class.
     Circuits and Systems, IEEE Transactions on, 26(11):979–980, Nov 1979.)
 
 - steffensen method
+- aitken_extrapolation
+
+##

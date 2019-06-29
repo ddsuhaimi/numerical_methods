@@ -12,12 +12,12 @@ def h(x):
 
 def aitken(x, e, N):
     for i in range(N):
-        # convergence check
-        if abs(f(x)) < e:
-            return x
-
         # update new value to check
         x = x - (g(x) - x)**2 / (g(g(x)) - 2*g(x) + x)
+
+        # convergence check using function value tolerance
+        if abs(f(x)) < e:
+            return x
 
     # if we still cant satisfy convergence check,
     # the it must not converge

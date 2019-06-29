@@ -4,21 +4,23 @@ def f(x):
 
 
 def secant(a, b, e, N):
+    x = [None for i in range(N)]
+    x[0] = a
+    x[1] = b
 
-    for i in range(N):
-        # convergence check
-        if abs(a-b) < e:
-            return (a-b)/2
+    for i in range(1, N-1):
 
         # change the bracket point
-        new_p = b - f(b) * ((b-a) / f(b)-f(a))
-        a = b
-        b = new_p
+        x[i + 1] = x[i] - f(x[i]) * (((x[i] - x[i - 1])) /
+                                     (f(x[i])-f(x[i - 1])))
+
+        # convergence check
+        if abs(x[i + 1] - x[i]) < e:
+            return x[i + 1]
 
     # if we still cant satify convergent check,
     # then it must not converge
-    if (b-a) > e:
-        return None
+    return "not converge"
 
 
 print(secant(-4, 2, 1e-6, 100))
