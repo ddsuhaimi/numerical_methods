@@ -13,4 +13,5 @@ This repository contains codes I made for my numerical method class.
 - steffensen method
 - aitken_extrapolation
 
-##
+## Curve fitting
+- linear regression
