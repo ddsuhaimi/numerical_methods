@@ -1,5 +1,7 @@
 # Numerical method codes
-This repository contains codes I made for my numerical method class.
+This repository contains various numerical methods for root finding, curve fitting etc.
+s
+
 ## Root finding
 - bisection method
 - regula falsi
@@ -15,3 +17,7 @@ This repository contains codes I made for my numerical method class.
 
 ## Curve fitting
 - linear regression
+- quadratic regression
+- cubic regression
+
+## Interpolation
