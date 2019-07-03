@@ -17,3 +17,7 @@ This repository contains various numerical methods for root finding, curve fitti
 
 ## Interpolation
 - lagrange interpolation
+
+## Differentiation
+- finite difference for first derivative
+- finite difference for second derivative
