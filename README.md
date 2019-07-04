@@ -21,3 +21,8 @@ This repository contains various numerical methods for root finding, curve fitti
 ## Differentiation
 - finite difference for first derivative
 - finite difference for second derivative
+
+## Integration
+- rectangular rule
+- trapezoidal rule
+- simpson rule
