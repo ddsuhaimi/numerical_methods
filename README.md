@@ -26,3 +26,6 @@ This repository contains various numerical methods for root finding, curve fitti
 - rectangular rule
 - trapezoidal rule
 - simpson rule
+
+## Differential Equation
+- euler method for ODE
