@@ -28,4 +28,5 @@ This repository contains various numerical methods for root finding, curve fitti
 - simpson rule
 
 ## Differential Equation
-- euler method for ODE
+- euler method
+- taylor 2nd order method
